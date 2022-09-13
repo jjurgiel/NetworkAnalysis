@@ -6,8 +6,8 @@ This set of functions perform Network Contingency Analysis (NCA) on source-level
 The main goal of NCA is do determine whether a particular brain network, or pair of brain networks, are communicating aberrantly in a particular diagnostic group.
 
 In brief:
-* Effective (causal) connectivity is first calculated between pairs of dipoles using the groupSIFT toolbox (https://github.com/sccn/groupSIFT)
-* ICA-localized dipoles are projected to a set of 286 parcels described in:
+* Effective (causal) connectivity is first calculated between pairs of ICA-localized dipoles using the groupSIFT toolbox (https://github.com/sccn/groupSIFT)
+* Dipoles are then projected to a set of 286 parcels described in:
   * _Gordon, E. M., Laumann, T. O., Adeyemo, B., Huckins, J. F., Kelley, W. M., & Petersen, S. E. (2016). Generation and evaluation of a cortical area parcellation from resting-state correlations. Cerebral cortex, 26(1), 288-303._
 * These parcels are segregated into 12 classical brain networks (as described in Gordon et al.), e.g. Default Mode, FrontoParietal, Visual, Ventral Attention, etc.
   * For example, the parcel mapping for the Default Mode network is shown below:
