@@ -1,9 +1,9 @@
 # NetworkAnalysis
-This set of functions perform Network Contingency Analysis (NCA) on source-level EEG data, and is translated to work with EEG data from the fMRI implemented introduced in _Sripada, C., Kessler, D., Fang, Y., Welsh, R. C., Prem Kumar, K., & Angstadt, M. (2014). Disrupted network architecture of the resting brain in attention‐deficit/hyperactivity disorder. Human brain mapping, 35(9), 4693-4705._
+This set of functions perform Network Contingency Analysis (NCA) on source-level EEG data, and is translated to work with EEG data from the fMRI implementation introduced in _Sripada, C., Kessler, D., Fang, Y., Welsh, R. C., Prem Kumar, K., & Angstadt, M. (2014). Disrupted network architecture of the resting brain in attention‐deficit/hyperactivity disorder. Human brain mapping, 35(9), 4693-4705._
 
 
 ### Summary
-The main goal of NCA is do determine whether a particular brain network, or pair of brain networks, are communicating aberrantly in a particular diagnostic group.
+The main goal of NCA is do determine whether particular brain networks, or pairs of brain networks, are communicating aberrantly in a particular diagnostic group.
 
 In brief:
 * Effective (causal) connectivity is first calculated between pairs of ICA-localized dipoles using the groupSIFT toolbox (https://github.com/sccn/groupSIFT)
