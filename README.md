@@ -1,6 +1,8 @@
 # NetworkAnalysis
-This set of functions performed Network Contingency Analysis (NCA) on source-level EEG data, and is translated to work with EEG data from the fMRI implemented introduced in _Sripada, C., Kessler, D., Fang, Y., Welsh, R. C., Prem Kumar, K., & Angstadt, M. (2014). Disrupted network architecture of the resting brain in attention‐deficit/hyperactivity disorder. Human brain mapping, 35(9), 4693-4705._
+This set of functions perform Network Contingency Analysis (NCA) on source-level EEG data, and is translated to work with EEG data from the fMRI implemented introduced in _Sripada, C., Kessler, D., Fang, Y., Welsh, R. C., Prem Kumar, K., & Angstadt, M. (2014). Disrupted network architecture of the resting brain in attention‐deficit/hyperactivity disorder. Human brain mapping, 35(9), 4693-4705._
 
+
+### Summary
 The main goal of NCA is do determine whether a particular brain network, or pair of brain networks, are communicating aberrantly in a particular diagnostic group.
 
 In brief:
@@ -13,7 +15,14 @@ In brief:
 * Network-level statistics (using either t-test, ANOVA, regression model, etc.) are estimated on groupings of between-network and within-network connections, using a permutation-based approach to control for multiple comparisons within networks, in order to determine which networks show above-chance numbers of atypical connections
 * False-discovery rate correction is additionally implemented to control for multiple comparisons across networks
 
-Example outcome:
+### How to run
+The primary functions to run are:
+* _/Scripts/parcelConnectivity.m_ (which will generate parcel-connectivity measures), and 
+* _/Scripts/networkContingencyAnalysis_TimeFreq.m_ (which will perform the actual statistical analysis, plot results, etc.)
+
+Note: Due to large matrix sizes which do not fit in MATLAB memory (286 x 286 x time x freq x #subjects), data is stored in sparse format, and imported on an as-needed basis. For reconstructing the full matrix, refer to the loadData function of the NCA script.
+
+### Example output
 
 <img src="https://user-images.githubusercontent.com/12466792/189802401-9f382e65-5564-44b2-976d-e64bbcf25f60.png" width="400" height="400">
 
