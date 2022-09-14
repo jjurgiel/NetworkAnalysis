@@ -24,7 +24,7 @@ Note: Due to large matrix sizes which do not fit in MATLAB memory (286 x 286 x t
 
 ### Example output
 
-<img src="https://user-images.githubusercontent.com/12466792/189802401-9f382e65-5564-44b2-976d-e64bbcf25f60.png" width="400" height="400">
+<img src="https://user-images.githubusercontent.com/12466792/189802401-9f382e65-5564-44b2-976d-e64bbcf25f60.png" width="500" height="400">
 
 Here, a 2-group comparison analysis in network connectivity was performed. Red and blue dots indicate the direction of significant differences between groups for a particular connection (e.g., blue dots show that Group 1 > Group 2 for a connection, while red dots show Group 2 > Group 1).
 
